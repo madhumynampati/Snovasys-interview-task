@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="list-group" *ngFor="let asset of allAssets">
+      <div class="list-group-item active">
+        <h4 class="list-group-item-heading">{{asset.assteName}} Purchased On {{asset.purchasedDate}}</h4>
+        <p class="list-group-item-text">Cost {{asset.cost}}</p>
+      </div>
+      <button (click)="viewAsset(asset)">View</button>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+  

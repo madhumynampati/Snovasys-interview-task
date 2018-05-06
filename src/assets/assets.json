@@ -1,0 +1,40 @@
+{
+    "data":
+    [{
+        "id":1,
+        "assteName":"Monitor 1",
+        "assignedTo":"Mark",
+        "assignedDate":"02-05-2018",
+        "damaged":true,
+        "damagedDate":"01-05-2018",
+        "purchasedDate":"05-02-2018",
+        "cost":200
+    },{
+        "id":2,
+        "assteName":"Laptop 1",
+        "assignedTo":"Chris",
+        "assignedDate":"02-05-2018",
+        "damaged":true,
+        "damagedDate":"01-05-2018",
+        "purchasedDate":"05-02-2018",
+        "cost":100
+    },{
+        "id":3,
+        "assteName":"Monitor 2",
+        "assignedTo":"Mark",
+        "assignedDate":"02-05-2018",
+        "damaged":false,
+        "damagedDate":null,
+        "purchasedDate":"05-02-2018",
+        "cost":250
+    },{
+        "id":4,
+        "assteName":"Laptop 2",
+        "assignedTo":"chris",
+        "assignedDate":"02-05-2018",
+        "damaged":false,
+        "damagedDate":null,
+        "purchasedDate":"05-02-2018",
+        "cost":300
+    }]
+}

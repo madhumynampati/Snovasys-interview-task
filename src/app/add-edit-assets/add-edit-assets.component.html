@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+      <h3>View Asset <span><button class="btn btn-primary" (click)="updateAsset()"  *ngIf="viewAsset">Update</button><button  *ngIf="!viewAsset" class="btn btn-primary" (click)="addAsset()">Add</button></span></h3>
+    <p>Asset Id :<input type="number" [(ngModel)]="asset.id"></p>
+    <p>Asset Name :<input type="text"  [(ngModel)]="asset.assteName"></p>
+    <p>Purchased Date :<input type="text"  [(ngModel)]="asset.purchasedDate"></p>
+    <p>Assigned To :<input type="text"  [(ngModel)]="asset.assignedTo"></p>
+    <p>Cost :<input type="text"  [(ngModel)]="asset.cost"></p>
+    
+  </div>
+  <div class="col-md-4"></div>
+</div>

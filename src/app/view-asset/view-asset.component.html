@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4" *ngIf="viewAsset">
+    <h3>View Asset <span><button class="btn btn-primary" (click)="updateAsset()">Update</button><button  class="btn btn-danger" (click)="deleteAsset()">Delete</button></span></h3>
+    <p>Asset Id :<label>{{asset.id}}</label></p>
+    <p>Asset Name :<label>{{asset.assteName}}</label></p>
+    <p>Purchased Date :<label>{{asset.purchasedDate}}</label></p>
+    <p>Assigned To :<label>{{asset.assignedTo}}</label></p>
+    <p>Cost :<label>{{asset.cost}}</label></p>
+    
+  </div>
+  <div class="col-md-4"></div>
+</div>

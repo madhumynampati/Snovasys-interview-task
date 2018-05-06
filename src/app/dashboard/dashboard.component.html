@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-md-4 pull-right">
+      <button class="btn btn-primary" (click)="goallAssets()">All Assets</button>
+    <button class="btn btn-info" (click)="addAsset()">Add New Asset</button>
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <h3>Recently Purchased Assets</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Asset Id</th>
+            <th scope="col">Asset Name</th>
+            <th scope="col">Purchased Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let asset of allAssets">
+            <th scope="row">{{asset.id}}</th>
+            <td>{{asset.assteName}}</td>
+            <td>{{asset.purchasedDate}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+        <h3>Recently Allocated To Me</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Asset Id</th>
+              <th scope="col">Asset Name</th>
+              <th scope="col">Damaged Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let asset of assetsAssignedToMe">
+              <th scope="row">{{asset.id}}</th>
+              <td>{{asset.assteName}}</td>
+              <td>{{asset.assignedDate}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <h3>Recently Damaged Assets</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Asset Id</th>
+              <th scope="col">Asset Name</th>
+              <th scope="col">Damaged Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let asset of damagedAssets">
+              <th scope="row">{{asset.id}}</th>
+              <td>{{asset.assteName}}</td>
+              <td>{{asset.damagedDate}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <h3>Recently Assigned Assets</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Asset Id</th>
+              <th scope="col">Asset Name</th>
+              <th scope="col">Damaged Date</th>
+              <th scope="col">Assigned To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let asset of allAssets">
+              <th scope="row">{{asset.id}}</th>
+              <td>{{asset.assteName}}</td>
+              <td>{{asset.damagedDate}}</td>
+              <td>{{asset.assignedTo}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    <div class="col-md-2"></div>
+</div>
